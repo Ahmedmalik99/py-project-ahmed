@@ -1,23 +1,140 @@
-# list= (15, 1, 45, 12, 7)
-#
-# v1=list[1]
-#
-# print(v1)
 
 
 # assigment 2
 
-# n1 =int(input("enter a number"))
+# n = 216
+# x = str(n)
+# z = int(n) % int(x[0])
 #
-# result = ({n1} / 2)
+# if z == 0:
+#     print("2")
 #
-# r=type(result)
-# print (r)
+# z2 = int(n) % int(x[1])
+#
+# if z2 == 0:
+#     print(1)
+#
+#
+# z3 = int(n) % int(x[2])
+#
+# if z3 == 0:
+#     print(6)
+
+
+
 
 # assigment 3
 
-arr =  int("90 100 78 89 67")
+# for num1
 
-if arr[4] < [0] :
-    print ([4])
+arr = [90, 100, 78, 89, 67]
 
+a = []
+
+if arr[4] > arr[0]:
+    print(arr[0])
+
+elif arr[4] > arr[1]:
+    print(arr[1])
+
+
+elif arr[4] > arr[2]:
+    print(arr[2])
+
+elif arr[4] > arr[3]:
+    print(arr[3])
+
+else:
+    a.append(arr[4])
+
+
+# for num2
+
+if arr[2] > arr[0]:
+    print(arr[0])
+
+elif arr[2] > arr[1]:
+    print(arr[1])
+
+
+elif arr[2] < arr[4]:
+    print(arr[4])
+
+elif arr[2] > arr[3]:
+    print(arr[3])
+
+else:
+    a.append(arr[2])
+
+# for num3
+
+if arr[3] < arr[3]:
+    print(arr[3])
+
+elif arr[3] > arr[1]:
+    print(arr[1])
+
+
+elif arr[3] < arr[2]:
+    print(arr[2])
+
+elif arr[3] < arr[4]:
+    print(arr[4])
+
+else:
+    a.append(arr[3])
+
+
+# for num4
+
+if arr[0] < arr[3]:
+    print(arr[3])
+
+elif arr[0] > arr[1]:
+    print(arr[1])
+
+
+elif arr[0] < arr[2]:
+    print(arr[2])
+
+elif arr[0] < arr[4]:
+    print(arr[4])
+
+else:
+    a.append(arr[0])
+
+# for num5
+
+if arr[1] < arr[3]:
+    print(arr[3])
+
+elif arr[1] > arr[1]:
+    print(arr[1])
+
+
+elif arr[1] < arr[0]:
+    print(arr[2])
+
+elif arr[1] < arr[4]:
+    print(arr[4])
+
+else:
+    a.append(arr[1])
+
+print(a)
+
+
+len1 = len(a)
+
+print( "lenth of a sorted list is", len1,"so the lenth of a sorted list is odd so the formula for it will be n+1/2")
+
+print (a)
+print("n+1/2")
+len3 = (len1 + 1, "/2")
+print (len3)
+len3 = (len1 + 1)
+
+result = int(len3 / 2)
+print (result)
+
+print("the",result,"value in sorted list is" ,a[2])
