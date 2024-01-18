@@ -169,3 +169,15 @@
 # print (result)
 #
 # print("the",result,"value in sorted list is" ,a[2])
+
+# assigment num4
+
+rmi = [2, 4, 3, 2, 5, 7, 6, 2, 9, 8, 3]
+
+del rmi[3]
+
+del rmi[6]
+
+del rmi[-1]
+
+print(rmi)
