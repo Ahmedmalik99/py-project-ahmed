@@ -170,14 +170,45 @@
 #
 # print("the",result,"value in sorted list is" ,a[2])
 
+
+
 # assigment num4
 
-rmi = [2, 4, 3, 2, 5, 7, 6, 2, 9, 8, 3]
 
-del rmi[3]
+# a = [1, 2, 3, 4, 2, 5, 6, 3, 7, 8, 1]
+#
+# b = []
+# for num in a:
+#     if num not in b:
+#         b.append(num)
+#
+# print("Original List", a)
+# print("List without duplicates", b)
 
-del rmi[6]
 
-del rmi[-1]
+# assigment num5
 
-print(rmi)
+# a = int(input("Enter a number: "))
+# b = 0
+#
+# for digit in str(a):
+#     b += int(digit)
+#
+# print(str(b) == str(b)[::-1])
+
+
+# assigment num6
+
+
+# a = [2, 3, 6, 7, 10, 16, 19, 66, ]
+#
+# b = int(input("enter a number: "))
+#
+# if b in a:
+#
+#     position = a.index(b)
+#     print(f"Element {b} found at position {position}")
+# else:
+#
+#     print(f"Element {b} not found in the list")
+
