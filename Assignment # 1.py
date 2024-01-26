@@ -199,16 +199,124 @@
 
 # assigment num6
 
+# a = [2, 3, 6, 7, 0]
+#
+# a1 = str(a)
+#
+# b = input("enter a number: ")
+#
+# for i in range(len(a1)):
+#     if b == a1[i]:
+#         print(f"{b} is present in the list at position {i}")
 
-# a = [2, 3, 6, 7, 10, 16, 19, 66, ]
+
+
+# assigment num7 multiplication table
+
+# Get input from the user
+# user_input = int(input("Enter a number: "))
 #
-# b = int(input("enter a number: "))
+# print(f"Multiplication Table for number {user_input}:")
+# for i in range(1, 11):
+#         result = user_input * i
+#         print(f"{user_input} x {i} = {result}")
+
+
+
+# assigment num8
+
+
+# Write a program to take input names of 10 friends and make a list of friend names using for loop.
+
+
+
+# b = []
 #
-# if b in a:
+# # b = str(b1)
 #
-#     position = a.index(b)
-#     print(f"Element {b} found at position {position}")
-# else:
+# for i in range(1,11):
+#     a = input("Enter a name: ")
+#     b.append(a)
 #
-#     print(f"Element {b} not found in the list")
+#
+# print (b)
+
+
+# assigment : write a program to add two integer lists using for loop and make another list using append function.
+
+
+# a = [1, 2, 3, 4, 5]
+# b = [6, 7, 8, 9, 10]
+#
+# c = []
+#
+# for i in range(len(a)):
+#     c.append(a[i] + b[i])
+#
+# print(c)
+
+
+# # assigment : write a program to print the sum of a list elements.
+#
+#
+# a = [4, 5, 3, 8]
+#
+# b = 0
+#
+# for i in a :
+#     b += i
+#
+# print(b)
+
+
+
+# assigment : Write a program print the even and odd numbers lesser than 100.
+
+# for even numbers
+# print("Even numbers less than 100: ")
+# for num in range(0 ,100 , 2):
+#     print(num , end ="" )
+#
+# # for odd numbers
+#
+# print()
+# print("Odd numbers less than 100")
+# for num in range(1, 100, 2):
+#     print(num , end ="" )
+
+# assigment :Write a program to display convert the list of string numbers into list of integers.
+
+
+
+# # List of string numbers
+# a = ["2", "5", "9"]
+#
+# b = [int(num) for num in a]
+#
+# print(b)
+
+
+#
+# # assigment
+#
+# for i in "*":
+#     for j in range(0, 6, 1):
+#         c = " " * (6 - j)
+#         b = c + i * j
+#         print(b)
+
+
+# assigment
+
+
+# a = "5"
+#
+# for i in range(5,0,-1):
+#     print(a * i)
+
+# assigment
+
+for i in range(1,10,2):
+    for j in  range(0,2):
+        print(i,end="")
 
