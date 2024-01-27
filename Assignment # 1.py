@@ -298,25 +298,20 @@
 
 #
 # # assigment
-#
+
 # for i in "*":
 #     for j in range(0, 6, 1):
 #         c = " " * (6 - j)
+#
 #         b = c + i * j
 #         print(b)
 
 
-# assigment
 
 
-# a = "5"
-#
-# for i in range(5,0,-1):
-#     print(a * i)
 
-# assigment
 
-for i in range(1,10,2):
-    for j in  range(0,2):
-        print(i,end="")
+
+
+
 
