@@ -190,20 +190,21 @@ a = 5
 
 
 # Ask the user to input a username
+# def check_username(username):
+#     if len(username) >= 8:
+#         if not username[0].isdigit():
+#             print("Username is valid.")
+#         else:
+#             print("Username must not start with a number.")
+#     else:
+#         print("Username must have at least 8 characters.")
+#
 # user_username = input("Enter your username: ")
-
-def name(username):
-    if len(username) >= 8:
-        if not username[0].isdigit():
-            print("Username is valid.")
-        else:
-            print("Username must not start with a number.")
-    else:
-        print("Username must have at least 8 characters.")
-
-# Take input as 'a'
-a = input("Enter your username: ")
-name(a)
+# check_username(user_username)
+#
+# # Take input as 'a'
+# a = input("Enter your username: ")
+# name(a)
 
 
 
@@ -221,5 +222,121 @@ name(a)
 #         else:
 #             print("Password strength: Weak")
 #             print("Password should be at least 8 characters long and contain at least one uppercase letter.")
+
+
+
+
+# assigment for utility
+
+# for 1
+
+import random
+import string
+
+def generate_password(length=8):
+    if length < 8: length = 8
+    return ''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits + string.punctuation)
+    for i in range(8))
+
+# for 2
+
+def check_username(username):
+    if len(username) >= 8:
+        if not username[0].isdigit():
+            print("Username is valid.")
+            return True
+        else:
+            print("Username must not start with a number.")
+            return False
+    else:
+        print("Username must have at least 8 characters.")
+        return False
+
+# for 3
+
+def valid_email(email):
+    if email.find('@') == -1:
+        return "Valid email address."
+    else:
+        return "Invalid email address."
+
+# for 4
+
+import random
+
+def number_guessing_game():
+    flag = "red"
+    while flag == "red":
+        lucky_number = random.randint(1, 10)
+        input_value = int(input("Guess a number between 1 and 10: "))
+        if input_value == lucky_number:
+            print("Congratulations! Your guess is correct.")
+            flag = "green"
+        else:
+            print("Please try again.")
+
+# for 5
+
+def cal(n1, op, n2):
+    if op == "+":
+        return n1 + n2
+
+    elif op == "-":
+        return n1 - n2
+
+    elif op == "*":
+        return n1 * n2
+
+    elif op == "/":
+        return n1 / n2
+
+    else:
+        return "operator does not  match "
+
+
+
+a = "1 : generate password"
+b = "2 : check valid username"
+c = "3 : check valid email address"
+d = "4 : play a number guessing game"
+e = "5 : calculator"
+
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+
+flag = "red"
+while flag == "red":
+    x = input("choose a utility (1-5) : ")
+
+    if x == "1":
+        print(f"Generated password: ", generate_password())
+
+    if x == "2":
+        user_username = input("Enter your username: ")
+        check_username(user_username)
+
+    if x == "3":
+        email = input("Enter an email address: ")
+        result = valid_email(email)
+        print(result)
+
+
+    if x == "4":
+        number_guessing_game()
+
+    if x == "5":
+        num1 = int(input("Enter a number: "))
+        opr = input("Enter a operator: ")
+        num2 = int(input("Enter a number: "))
+        result = cal(num1, opr, num2)
+        print(f" your answer is {result}")
+        flag = "green"
+    else:
+        print("Please choose a utility between (1-5).")
+
+
 
 
