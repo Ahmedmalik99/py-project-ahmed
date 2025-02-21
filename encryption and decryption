@@ -1,0 +1,32 @@
+import string
+import random
+
+# Define the character set
+char = " " + string.punctuation + string.digits + string.ascii_letters
+chars = list(char)
+
+# Create a shuffled key
+key = chars.copy()
+random.shuffle(key)
+
+# Encryption
+user = input("Enter a text to encrypt: ")
+encrypted_text = ""
+
+for i in user:
+    index = chars.index(i)  # Find the index of the character in the original set
+    encrypted_text += key[index]  # Replace it with the corresponding character in the key
+
+print(f"Plain text: {user}")
+print(f"Encrypted text: {encrypted_text}")
+
+# Decryption
+user_txt = input("Enter a text to decrypt: ")
+decrypted_text = ""
+
+for j in user_txt:
+    index = key.index(j)  # Find the index of the character in the key
+    decrypted_text += chars[index]  # Replace it with the corresponding character in the original set
+
+print(f"Encrypted text: {user_txt}")
+print(f"Decrypted text: {decrypted_text}")
